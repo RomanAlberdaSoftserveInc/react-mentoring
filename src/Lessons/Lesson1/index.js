@@ -41,7 +41,7 @@ class ClassComponent extends React.Component {
   componentWillUnmount() {}
 
   render() {
-    return "ClassComponent";
+    return "Lesson1";
   }
 }
 
