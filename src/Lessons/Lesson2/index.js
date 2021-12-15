@@ -77,7 +77,10 @@ const AutoColumns = ({ text = "", ...rest }) => {
 // Mediator
 // ===============================================================
 
-const Mediator = () => {
+const Mediator = ({
+  columnsComponent: ColumnsComponent = Columns,
+  inputComponent: InputComponent = RightComponent,
+}) => {
   const [value, setValue] = useState({
     text: "",
     count: 2,
@@ -90,7 +93,7 @@ const Mediator = () => {
 
   return (
     <div>
-      <RightComponent
+      <InputComponent
         value={text}
         style={{ color: "green" }}
         onChange={handleChangeText}
@@ -101,7 +104,11 @@ const Mediator = () => {
       <span>Count: {count}</span>
       <br />
       <br />
-      <Columns text={text} count={count} style={{ wordBreak: "break-all" }} />
+      <ColumnsComponent
+        text={text}
+        count={count}
+        style={{ wordBreak: "break-all" }}
+      />
     </div>
   );
 };
