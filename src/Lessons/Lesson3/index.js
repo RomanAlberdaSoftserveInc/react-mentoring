@@ -7,6 +7,11 @@ import { useWindowWidth } from "./useResizeObserver";
 // 3. hook + view
 // [1, 2, 3].map(item => item > 2);
 
+// NEXT:
+// Hooks
+// Webpack
+// Design Patterns
+
 const defaultStyle = {
   width: 150,
   height: 150,
