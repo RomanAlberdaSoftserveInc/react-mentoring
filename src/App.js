@@ -1,7 +1,5 @@
-import "./App.css";
-
 import Lesson1 from "./Lessons/Lesson1";
-import Lesson2 from "./Lessons/Leeson2";
+import Lesson2 from "./Lessons/Lesson2";
 import { Routes, Route, Link } from "react-router-dom";
 import { ListGroup } from "react-bootstrap";
 
