@@ -73,7 +73,7 @@ const UserWidget = ({ userId }) => {
 
     const performFetch = async () => {
       try {
-        await new Promise(resolve => setTimeout(resolve, 200));
+        // await new Promise(resolve => setTimeout(resolve, 200));
         const data = await (
           await fetch(`https://swapi.dev/api/people/${userId}/`, { signal })
         ).json();
