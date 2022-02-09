@@ -8,6 +8,7 @@ import Lesson3 from "./Lessons/Lesson3";
 import Lesson4 from "./Lessons/Lesson4";
 import Lesson5 from "./Lessons/Lesson5";
 import Lesson6 from "./Lessons/Lesson6";
+import Lesson7 from "./Lessons/Lesson7";
 
 function App() {
   return (
@@ -36,6 +37,9 @@ function App() {
         <ListGroup.Item action>
           <Link to="/lesson6">Урок6</Link>
         </ListGroup.Item>
+        <ListGroup.Item action>
+          <Link to="/lesson7">Урок7</Link>
+        </ListGroup.Item>
       </ListGroup>
 
       <div>
@@ -46,6 +50,7 @@ function App() {
           <Route path="/lesson4" element={<Lesson4 />} />
           <Route path="/lesson5" element={<Lesson5 />} />
           <Route path="/lesson6" element={<Lesson6 />} />
+          <Route path="/lesson7" element={<Lesson7 />} />
         </Routes>
       </div>
     </div>
