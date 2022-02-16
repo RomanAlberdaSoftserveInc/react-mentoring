@@ -9,6 +9,16 @@ import Lesson4 from "./Lessons/Lesson4";
 import Lesson5 from "./Lessons/Lesson5";
 import Lesson6 from "./Lessons/Lesson6";
 import Lesson7 from "./Lessons/Lesson7";
+import Lesson8 from "./Lessons/Lesson8";
+
+// import styles from './file.css'
+// className = styles["table"]
+
+// (".table_cadsklakj12323");
+
+// const className = "btn-red-size-1";
+// const size = 1;
+// const className = `btn-red-size-${size}`;
 
 function App() {
   return (
@@ -40,6 +50,9 @@ function App() {
         <ListGroup.Item action>
           <Link to="/lesson7">Урок7</Link>
         </ListGroup.Item>
+        <ListGroup.Item action>
+          <Link to="/lesson8">Урок8</Link>
+        </ListGroup.Item>
       </ListGroup>
 
       <div>
@@ -51,6 +64,7 @@ function App() {
           <Route path="/lesson5" element={<Lesson5 />} />
           <Route path="/lesson6" element={<Lesson6 />} />
           <Route path="/lesson7" element={<Lesson7 />} />
+          <Route path="/lesson8" element={<Lesson8 />} />
         </Routes>
       </div>
     </div>
